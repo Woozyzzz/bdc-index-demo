@@ -40,6 +40,7 @@ export default {
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
+      cursor: pointer;
 
       .h1 {
         display: none;
