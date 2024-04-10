@@ -1,0 +1,11 @@
+/* 自定义主题颜色 */
+$--color-primary: #e92929; // 主要的主题色，可以根据党政主题选择适当的红色
+$--color-success: #5cb85c; // 成功状态的颜色
+$--color-warning: #f0ad4e; // 警告状态的颜色
+$--color-danger: #d9534f; // 危险状态的颜色
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: "~element-ui/lib/theme-chalk/fonts";
+
+/* 引入 Element UI 的样式变量文件 */
+@import "~element-ui/packages/theme-chalk/src/index";
