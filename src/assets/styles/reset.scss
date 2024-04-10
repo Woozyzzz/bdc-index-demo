@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+html {
+  min-width: 375px;
+}
+
 html,
 body {
   height: 100%;
