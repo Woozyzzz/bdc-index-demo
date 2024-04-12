@@ -47,7 +47,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("~@/assets/images/background-placard.png");
+    background-image: url("~@/assets/images/home-view/background-placard.png");
     background-position: right;
     background-size: 100% 100%;
     background-repeat: no-repeat;
