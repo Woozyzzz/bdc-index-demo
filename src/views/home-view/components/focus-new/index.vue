@@ -12,12 +12,15 @@
         arrow="hover"
         textFontSize="18px"
       />
+
+      <FocusNewTabsVue />
     </div>
   </div>
 </template>
 
 <script>
 import FocusNewCarouselVue from "./components/focus-new-carousel.vue";
+import FocusNewTabsVue from "./components/focus-new-tabs/index.vue";
 import focusNew1Image from "@/assets/images/home-view/focus-new-1.jpg";
 import focusNew2Image from "@/assets/images/home-view/focus-new-2.jpg";
 import focusNew3Image from "@/assets/images/home-view/focus-new-3.jpg";
@@ -26,7 +29,7 @@ import focusNew5Image from "@/assets/images/home-view/focus-new-5.jpg";
 
 export default {
   name: "FocusNew",
-  components: { FocusNewCarouselVue },
+  components: { FocusNewCarouselVue, FocusNewTabsVue },
   data() {
     return {
       focusNewList: [
@@ -63,7 +66,6 @@ export default {
     onClickCarouselItemContent(url) {
       location.href = url || "/";
     },
-    handleClick() {},
   },
 };
 </script>
@@ -87,10 +89,19 @@ export default {
     .computer {
       display: flex;
       justify-content: space-between;
-      align-items: center;
 
       .focus-new-carousel {
         width: 50%;
+      }
+
+      .focus-new-tabs {
+        margin-left: 32px;
+        width: 50%;
+
+        ::v-deep .el-tabs__content {
+          height: calc(400px - 54px);
+          overflow: auto;
+        }
       }
     }
   }
