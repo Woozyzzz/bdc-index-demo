@@ -88,6 +88,7 @@ export default {
     .computer {
       display: flex;
       justify-content: space-between;
+      background-color: #fff;
 
       .focus-new-carousel {
         width: 50%;
@@ -95,6 +96,7 @@ export default {
 
       .focus-new-tabs {
         margin-left: 32px;
+        margin-right: 8px;
         width: 50%;
 
         ::v-deep .el-tabs__content {
