@@ -1,21 +1,21 @@
 <template>
   <div class="layout-basic">
-    <HeaderBasic>
-      <HeaderMenu />
-    </HeaderBasic>
+    <HeaderBasicVue>
+      <HeaderMenuVue />
+    </HeaderBasicVue>
     <router-view />
-    <FooterBasic />
+    <FooterBasicVue />
   </div>
 </template>
 
 <script>
-import HeaderBasic from "@/components/header-basic/index.vue";
-import HeaderMenu from "@/components/header-menu/index.vue";
-import FooterBasic from "@/components/footer-basic/index.vue";
+import HeaderBasicVue from "@/components/header-basic/index.vue";
+import HeaderMenuVue from "@/components/header-menu/index.vue";
+import FooterBasicVue from "@/components/footer-basic/index.vue";
 
 export default {
   name: "LayoutBasic",
-  components: { HeaderBasic, HeaderMenu, FooterBasic },
+  components: { HeaderBasicVue, HeaderMenuVue, FooterBasicVue },
 };
 </script>
 

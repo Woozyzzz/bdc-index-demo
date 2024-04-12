@@ -1,19 +1,19 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import LayoutBasic from "@/layouts/basic/index.vue";
-import HomeView from "@/views/home-view/index.vue";
+import LayoutBasicVue from "@/layouts/basic/index.vue";
+import HomeViewVue from "@/views/home-view/index.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "",
-    component: LayoutBasic,
+    component: LayoutBasicVue,
     children: [
       {
         path: "/",
         name: "home",
-        component: HomeView,
+        component: HomeViewVue,
       },
     ],
   },

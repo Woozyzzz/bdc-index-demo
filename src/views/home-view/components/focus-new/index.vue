@@ -8,7 +8,6 @@
       <FocusNewCarouselVue
         :focusNewList="focusNewList"
         height="400px"
-        indicatorPosition="none"
         arrow="hover"
         textFontSize="18px"
       />

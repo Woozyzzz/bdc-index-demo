@@ -1,17 +1,17 @@
 <template>
   <div class="home">
-    <PlacardCarousel />
-    <FocusNew />
+    <PlacardCarouselVue />
+    <FocusNewVue />
   </div>
 </template>
 
 <script>
-import PlacardCarousel from "@/views/home-view/components/placard-carousel.vue";
-import FocusNew from "@/views/home-view/components/focus-new/index.vue";
+import PlacardCarouselVue from "@/views/home-view/components/placard-carousel.vue";
+import FocusNewVue from "@/views/home-view/components/focus-new/index.vue";
 
 export default {
   name: "HomeView",
-  components: { PlacardCarousel, FocusNew },
+  components: { PlacardCarouselVue, FocusNewVue },
   data() {
     return {};
   },
